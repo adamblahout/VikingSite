@@ -2,6 +2,8 @@
 body{
     margin: 0px;
     margin-top: 25px;
+    width: 100%;
+    max-width: max-content;
 
 }
 header{
@@ -169,8 +171,10 @@ footer article h2{
     color: white;
     font-weight: bold;
     text-align: center;
-    margin-top: -60px;
+    margin-top: -40px;
     margin-bottom: 10px;
+    font-size: small;
+    
 }
 footer article p{
     padding-top: 25px;
@@ -213,8 +217,7 @@ footer article form input[type=text]{
 
 
 footer section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     background-color: #222222;
 }
 
@@ -232,7 +235,7 @@ footer section a:hover{
 
 footer section aside{
     text-align: left;
-    margin-right: 300px;
+    margin-left: 50%;
 }
 footer div p{
     margin-top: 100px;
@@ -256,13 +259,16 @@ footer div p{
     header section{
         grid-template-columns: 100px 150px 500px 200px;
     }
-    header aside {
-    }
+
     footer article img{
         margin-left: 200px;
         margin-right: 200px;
         width: 60px;
     }
+    footer article h2{
+        font-size: large;
+    }
+
 }
 
 @media only screen and (min-width: 1763px) {
@@ -275,7 +281,6 @@ footer div p{
     footer article img{
         margin-left: 125px;
         margin-right: 125px;
-        width: 75px;
     }
 }
 
@@ -297,9 +302,7 @@ footer div p{
         margin-top: -400px;
         margin-bottom: 10px;
     }
-    textarea{
 
-    }
 }
 
 
@@ -354,7 +357,7 @@ ul#tabs li.facebook {
     background-size: 30px 30px;
     background-position: left center;
     height: 35px;
-    margin-right: 380px;
+   
 }
 
 ul#tabs li.instagram {
@@ -363,7 +366,7 @@ ul#tabs li.instagram {
     background-size: 30px 30px;
     background-position: left center;
     height: 35px;
-    margin-right: 380px;
+ 
 }
 
 ul#tabs li.youtube {
@@ -372,7 +375,7 @@ ul#tabs li.youtube {
     background-size: 30px 30px;
     background-position: left center;
     height: 35px;
-    margin-right: 380px;
+    
 }
 ul#tabs li.twitch {
     list-style: none;
@@ -380,7 +383,7 @@ ul#tabs li.twitch {
     background-size: 30px 30px;
     background-position: left center;
     height: 35px;
-    margin-right: 380px;
+  
 }
 ul#tabs li.twitter {
     list-style: none;
@@ -388,5 +391,5 @@ ul#tabs li.twitter {
     background-size: 30px 30px;
     background-position: left center;
     height: 35px;
-    margin-right: 380px;
+  
 }
