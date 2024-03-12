@@ -1,0 +1,119 @@
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.Slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.Slide img {
+    width: 100%;
+    height: 500px;
+}
+
+/*  CSS pro manuální přepínaní  */
+
+.manual-nav {
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 4px solid #662320;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: #662320;
+}
+
+#Image1:checked ~ .first {
+    margin-left: 0;
+}
+
+#Image2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#Image3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#Image4:checked ~ .first {
+    margin-left: -60%;
+}
+
+/*  CSS pro automatické přepínaní  */
+
+.auto-nav {
+    position: absolute;
+    width: 100%;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.auto-nav div {
+    border: 4px solid #662320;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.auto-nav div:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: -50px
+}
+
+#Image1:checked ~ .auto-nav .auto-btn1 {
+    background: #662320;
+}
+
+#Image2:checked ~ .auto-nav .auto-btn2 {
+    background: #662320;
+}
+
+#Image3:checked ~ .auto-nav .auto-btn3 {
+    background: #662320;
+}
+
+#Image4:checked ~ .auto-nav .auto-btn4 {
+    background: #662320;
+}
+
+.auto-nav div.auto-btn1{
+    margin-bottom: 0px
+}
+.auto-nav div.auto-btn2{
+    margin-bottom: 0px
+}
+.auto-nav div.auto-btn3{
+    margin-bottom: 0px
+}

@@ -1,0 +1,21 @@
+main{
+    text-align: center;
+    margin-top: 400px;
+}
+
+textarea{
+    font-size: 3em;
+    resize: none;
+}
+textarea:last-child{
+    border: none;
+    text-align: center;
+    color: dimgray;
+}
+
+@media only screen and (max-width: 1080px) {
+    textarea{
+        width: 70%;
+        height: 30%;
+    }
+}
